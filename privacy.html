@@ -89,6 +89,7 @@
   </p>
   <ul>
     <li>Symptom names and the scores you give them, including flares you log during the day</li>
+    <li>Sleep, resting heart rate, heart rate variability and steps, if you connect Apple Health</li>
     <li>Factors you tick — foods, sleep, weather, whatever you choose to track</li>
     <li>Medications, their schedules, and the doses you mark as taken</li>
     <li>Period days, if you turn cycle tracking on</li>
@@ -108,6 +109,20 @@
     keep. If anyone asked us to produce your records, we could not — we do not have them. That is
     not a promise about how carefully we would handle a request; it is a consequence of the app
     having no server at all.
+  </p>
+
+  <h2>Apple Health (optional)</h2>
+  <p>
+    If you turn it on in Setup, Steady reads four things from Apple Health — time asleep, resting
+    heart rate, heart rate variability and step count — so that those can be tested against your
+    symptoms without you logging them by hand. This is <strong>read only</strong>: Steady never
+    writes anything to Health. The readings are used on your iPhone and stay there, like everything
+    else here.
+  </p>
+  <p>
+    It is off until you switch it on, and you can switch it off again in Setup. To revoke the
+    permission itself, open the Health app, then Sharing, then Apps — iOS does not let an app
+    revoke its own health access, only stop using it.
   </p>
 
   <h2>Analysis</h2>
@@ -150,6 +165,7 @@
   <table>
     <tr><th>Data</th><th>Purpose</th><th>Where it goes</th></tr>
     <tr><td>Symptoms, factors, medications, cycle, notes</td><td>Run the app and analyse your own record</td><td>Your device only</td></tr>
+    <tr><td>Sleep, heart rate, HRV, steps (only if you connect Apple Health)</td><td>Test them against your symptoms</td><td>Your device only</td></tr>
     <tr><td>Reminder settings</td><td>Schedule local notifications</td><td>Your device only</td></tr>
     <tr><td>Payment information</td><td>Process the one-time purchase</td><td>Apple</td></tr>
   </table>
@@ -161,6 +177,7 @@
     <li>No third-party SDKs that collect data</li>
     <li>No selling or sharing of data with anyone, including data brokers</li>
     <li>No access to your contacts, location, camera, photos or microphone</li>
+    <li>No writing to Apple Health — the connection is read only</li>
     <li>No accounts, no sign-in, no cloud sync</li>
   </ul>
 
